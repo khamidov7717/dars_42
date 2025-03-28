@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ListScreen extends StatelessWidget {
+  const ListScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +20,7 @@ class ListScreen extends StatelessWidget {
 class ItemWidget extends StatelessWidget {
   final int index;
 
-  const ItemWidget({Key? key, required this.index}) : super(key: key);
+  const ItemWidget({super.key, required this.index});
 
   @override
   Widget build(BuildContext context) {

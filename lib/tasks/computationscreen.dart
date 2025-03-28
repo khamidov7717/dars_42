@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ComputationScreen extends StatelessWidget {
+  const ComputationScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     int result = heavyComputation();
@@ -13,6 +15,6 @@ class ComputationScreen extends StatelessWidget {
   int heavyComputation() {
     int sum = 1000000000;
 
-    return sum * (sum + 1) ~/ 2;
+    return (sum * (sum - 1)) ~/ 2;
   }
 }
